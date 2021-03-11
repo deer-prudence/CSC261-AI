@@ -118,7 +118,7 @@ def main():
     pp.xlabel("Episodes")
     pp.ylabel("Average Reward")
     pp.ylim(-20, 5)
-    pp.hlines(-1, 0, episodes)
+    pp.hlines(-1, 0, episodes, colors=["red"], linestyles="dashed")
     pp.title("Experiment I; γ=0.9, α=0.1, ε=0.25")
     pp.show()
     
@@ -130,7 +130,7 @@ def main():
     pp.xlabel("Episodes")
     pp.ylabel("Average Reward")
     pp.ylim(-20, 5)
-    pp.hlines(-1, 0, episodes)
+    pp.hlines(-1, 0, episodes, colors=["red"], linestyles="dashed")
     pp.title("Experiment II; γ=0.9, α=1/T, ε=1/T")
     pp.show()
     # second_sim = [0.9, 1/T, 1/T]
@@ -143,7 +143,7 @@ def main():
     pp.xlabel("Episodes")
     pp.ylabel("Average Reward")
     pp.ylim(-20, 5)
-    pp.hlines(-1, 0, episodes)
+    pp.hlines(-1, 0, episodes, colors=["red"], linestyles="dashed")
     pp.title("Experiment III; γ=0.9, α=0.1, ε=1/T")
     pp.show()
     # third_sim = [0.9, 0.1, 1/T]
